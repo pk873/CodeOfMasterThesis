@@ -17,7 +17,7 @@ queryState <- function (IntervalSet,Data){
   return (levels(IntervalSet)[findIntervalIndex(IntervalSet = IntervalSet,Data = Data)])
 }
 
-#將輸入的證據轉成離散型資料的list給 likelihood weight sampling使用 更改$運算元後屬性即可套用其他應ㄎ用
+#將輸入的證據轉成離散型資料的list給 likelihood weight sampling使用 更改$運算元後屬性即可套用其他應用
 inputEvidence <- function(IntervalSet,E1,E2,E3,E4){
   ES1<-queryState(IntervalSet$Hour,E1)
   ES2<-queryState(IntervalSet$WeatherTemp,E2)
